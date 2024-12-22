@@ -25,11 +25,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-memory_db: {"email":[]} # type: ignore
+memory_db = {"emails":[]} 
 
 @app.get("/emails", response_model=EmailList)
 def get_emails():
-    return Email(EmailList=memory_db["emails"])
+    return EmailList(emailList=memory_db["emails"])
 
 @app.post("/emails")
 def add_email(email: Email):
