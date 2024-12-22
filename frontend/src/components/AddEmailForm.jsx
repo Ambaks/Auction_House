@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 
+// eslint-disable-next-line react/prop-types
 const AddEmailForm = ({ addEmail: handleAddEmail }) => {
     const [email, setEmail] = useState('');
 
