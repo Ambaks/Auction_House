@@ -1,8 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'url'
+    baseURL: 'http://localhost:8000'
 });
 
+// Export axios instance
+export default api;
 
 

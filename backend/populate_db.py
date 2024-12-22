@@ -1,5 +1,5 @@
 from sqlmodel import Session
-from main import engine
+from backend.mainAuction import engine
 from models import AuctionItem
 import random
 
